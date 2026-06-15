@@ -78,3 +78,45 @@ body {
     color: white; 
     font-family: serif
 }
+
+/* Phone styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 1.5rem;
+    }
+
+    .title {
+        margin-top: 150px;
+        width: 90%;
+        max-width: 90%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+
+    .title h2 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    body {
+        background-position: center;
+        background-attachment: scroll;
+    }
+}
