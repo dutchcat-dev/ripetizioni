@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: black;
+}
+
+.nav-logo {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 1000;
+    font-family: serif
+}
+
+.nav-links {
+    display: flex;
+    gap: 64px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 1000;
+    transition: .3s;
+    font-size: 2.5rem;
+}
+
+.nav-links a:hover {
+    opacity: .7;
+    transition: .3s;
+    transform: translateY(-3px)
+}
+
+body {
+    margin: 0
+}
+
+.pricing-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+
+    align-items: center;
+}
+
+/* Colonna sinistra */
+.pricing-plans {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Card dei prezzi */
+.plan-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    transition: 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Piano consigliato */
+.featured {
+    border: 2px solid #4f46e5;
+}
+
+/* Colonna destra */
+.pricing-image {
+    height: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+.pricing-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .pricing-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-image {
+        height: 350px;
+        order: -1;
+    }
+}
